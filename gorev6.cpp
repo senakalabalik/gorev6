@@ -1,17 +1,29 @@
+#define _USE_MATH_DEFINES // M_PI
 #include <iostream>
-
+#include <cmath>
 class RegularPolygon {
   private:
-  int n(int x);
-  int angle(int x); 
+    int n;
+    int angle;
+    RegularPolygon(int x) {
+      n=x ;
+      angle=π-(2π/x) ; 
+    }
+  public:
+    int area(int L);
+    area=L*L ; // sadece kare için alan formülü
+    int lentgh(int A);
+    length=sqrt(A) ; //kare için 
+  
 };
-int RegularPolygon::n(int x) {
-return n ;
-}
-int RegularPolygon::angle(int x) {
-return 180-(360/n) ; 
-}
-int main {
-RegularPolygon square;
-std::cout<< square.n(4)<<square.angle(4) ;
+
+int main() {
+RegularPolygon square(4);
+std::cin>> int l;
+std::cout<<square.area(l) ;
+std::cin>> int a;
+std::cout<<squarae.length(a) ;
+  
+  
+
 }
