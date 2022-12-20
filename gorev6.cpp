@@ -11,18 +11,23 @@ class RegularPolygon {
     }
   public:
     int area(int L);
-    area=L*L ; // sadece kare için alan formülü
-    int lentgh(int A);
-    length=sqrt(A) ; //kare için 
-  
+    int length(int A);  
 };
 
+int RegularPolygon::area(int L) {
+return L*L ; //kare için 
+}
+int RegularPolygon::length(int A) {
+return sqrt(A) ; //kare için
+}
 int main() {
 RegularPolygon square(4);
-std::cin>> int l;
-std::cout<<square.area(l) ;
-std::cin>> int a;
-std::cout<<squarae.length(a) ;
+int sidelentgh;
+std::cin>> sidelength;
+std::cout<<square.area(sidelength) ;
+int thearea;
+std::cin>> thearea;
+std::cout<<square.length(thearea) ;
   
   
 
