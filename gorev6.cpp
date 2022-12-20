@@ -5,13 +5,15 @@ class RegularPolygon {
   private:
     int n;
     int angle;
-    RegularPolygon(int x) {
-      n=x ;
-      angle=π-(2π/x) ; 
-    }
   public:
     int area(int L);
     int length(int A);  
+    int setN(int x){
+      n=x; 
+    }
+    int setAngle(int x){
+      angle=π-(2π/x);
+    
 };
 
 int RegularPolygon::area(int L) {
@@ -21,7 +23,9 @@ int RegularPolygon::length(int A) {
 return sqrt(A) ; //kare için
 }
 int main() {
-RegularPolygon square(4);
+RegularPolygon square;
+square.setN(4);
+square.setAngle(4);
 int sidelength;
 std::cin>> sidelength;
 std::cout<<square.area(sidelength) ;
