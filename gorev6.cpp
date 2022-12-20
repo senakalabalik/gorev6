@@ -22,7 +22,7 @@ return sqrt(A) ; //kare için
 }
 int main() {
 RegularPolygon square(4);
-int sidelentgh;
+int sidelength;
 std::cin>> sidelength;
 std::cout<<square.area(sidelength) ;
 int thearea;
