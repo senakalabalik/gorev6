@@ -32,7 +32,8 @@ std::cout<<square.area(sidelength) ;
 int thearea;
 std::cin>> thearea;
 std::cout<<square.length(thearea) ;
-  
+ ...
+   RegularPolygon(int n){		this->n=n;		this->angle=2*(double)M_PI/n;
   
 
 }
