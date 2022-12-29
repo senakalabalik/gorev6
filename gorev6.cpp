@@ -15,10 +15,10 @@ class RegularPolygon {
     RegularPolygon(int n) {		
     this->n=n;		
     this->angle=2*(double)M_PI/n;
-    count=count+1
+    count=count+1 ;
        }
     ~RegularPolygon() {
-      count=count-1 
+      count=count-1 ; 
       }
 };
 
@@ -38,7 +38,7 @@ std::cout<<square.area(sidelength) ;
 int thearea;
 std::cin>> thearea;
 std::cout<<square.length(thearea) ;
-std::cout << square.count ;
+std::cout << square.count ; //getcount yap. area düzelt. count=0 doğru yere yaz.
    
   
 
